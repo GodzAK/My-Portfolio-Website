@@ -330,43 +330,8 @@ span {
     position: relative;
 }
 
-.typing-text span::before {
-    content: "I.T Student";
-    color: #b74b4b;
-    animation: words 10s infinite;
-}
 
-.typing-text span::after {
-    content: "";
-    background-color: #0a0a0a;
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 3px solid #b74b4b;
-    right: -8px;
-    animation: cursor 0.8s infinite;
-}
 
-@keyframes words {
-    0%, 33% {
-        content: "I.T Student";
-    }
-    34%, 66% {
-        content: "Web Developer";
-    }
-    67%, 100% {
-        content: "System Analyst";
-    }
-}
-
-@keyframes cursor {
-    0%, 100% {
-        border-left-color: transparent;
-    }
-    50% {
-        border-left-color: #b74b4b;
-    }
-}
 
 /* Services Section */
 .services {
