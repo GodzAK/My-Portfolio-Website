@@ -876,6 +876,8 @@ span {
     border-radius: 1rem;
     border: 1px solid #262626;
     transition: 0.25s ease;
+    cursor: pointer;
+    color: inherit;
 }
 
 .contact-item i {
