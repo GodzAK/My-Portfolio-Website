@@ -13,6 +13,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
 }
  
 body {
@@ -158,6 +159,7 @@ nav a.active {
 section {
     min-height: 100vh;
     padding: 10rem 9% 5rem;
+    scroll-margin-top: 9rem;
 }
 
 .section-title {
