@@ -29,6 +29,25 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
+    // CONTACT - COPY TO CLIPBOARD
+const copyButtons = document.querySelectorAll('.copy-btn');
+copyButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const parent = btn.closest('.contact-item');
+        const textToCopy = parent.getAttribute('data-copy');
+        navigator.clipboard.writeText(textToCopy).then(() => {
+            const icon = btn.querySelector('i');
+            icon.className = 'fa-solid fa-check';
+            btn.classList.add('copied');
+            setTimeout(() => {
+                icon.className = 'fa-regular fa-copy';
+                btn.classList.remove('copied');
+            }, 1500);
+        });
+    });
+});
 
 
     // EXPERIENCE / PROJECTS SLIDER
