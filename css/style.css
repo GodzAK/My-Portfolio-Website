@@ -95,6 +95,9 @@ nav a.active {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    position: fixed;
+    top: 2.2rem;
+    right: 5%;
     z-index: 101;
 }
 
@@ -194,6 +197,25 @@ section {
 
 .home-content {
     animation: fadeInUp 0.6s ease;
+}
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #b74b4b;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+}
+
+.eyebrow-line {
+    display: inline-block;
+    width: 3.2rem;
+    height: 2px;
+    background: #b74b4b;
 }
 
 .home-content h1 {
@@ -895,7 +917,7 @@ span {
     margin: 0 auto 4rem;
     text-align: center;
 }
-availability-badge {
+.availability-badge {
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
