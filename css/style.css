@@ -693,6 +693,16 @@ span {
     color: white;
 }
 
+.project-actions {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.project-actions .btn {
+    text-align: center;
+}
+
 .pagination {
     display: flex;
     justify-content: center;
